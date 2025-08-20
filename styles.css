@@ -1,11 +1,11 @@
 :root{
-    --bg:#0b0c10;
-    --card:#111218;
-    --ink:#e6e6e6;
-    --muted:#a0a6ad;
-    --brand:#66fcf1;
-    --accent:#45a29e;
-    --border:#1b1f2a;
+    --bg:##fffdfd;
+    --card:#ca8787;
+    --ink:#000000;
+    --muted:#c1cfa1;
+    --brand:#ffefef;
+    --accent:#f3d0d7;
+    --border:#ca8787;
   }
   
   *{box-sizing:border-box}
