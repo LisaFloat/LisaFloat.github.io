@@ -1,11 +1,193 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Hello GitHub Pages</title>
-  </head>
-  <body>
-    <h1>🎉 It works!</h1>
-    <p>This is my first GitHub Pages site.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lisa Nguyen • Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sticky nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top">LN</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Lisa Nguyen</h1>
+        <p class="tagline">CS student • Software & Data Co-op @ DTE • Power Platform + Python</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn secondary" href="assets/Lisa_Nguyen_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+          <a class="btn outline" href="https://www.linkedin.com/in/nguyen8/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <img class="hero-img" src="headshot.jpeg" alt="Lisa Nguyen headshot" />
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m a Senior at Oakland University (BS in Computer Science, expected April 2026). I build practical tools and dashboards:
+        Power Apps, Power Automate, Power BI/Report Builder, and Python—currently on the Corrosion Engineering team at DTE Energy.
+        I like taking messy workflows and turning them into clean, reliable experiences.
+      </p>
+      <ul class="quickfacts">
+        <li>Location: Troy, MI</li>
+        <li>Co-op: DTE Energy (Software Dev & Data Analyst)</li>
+        <li>Past: Technology Support Specialist @ Oakland University; Finance Intern @ Meritor</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Car Maintenance App <span class="chip">Team • Scrum Master</span></h3>
+          <p>
+            Vehicle profiles (create/edit/display), user auth, shop ratings, and VIN API integration.
+            I led planning and task delegation, kept sprints on track, and shipped the core features.
+          </p>
+          <p class="meta">JavaScript • HTML/CSS • VIN API • GitHub/Trello</p>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/LisaFloat/My-Car-App" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>SkyCast <span class="chip">Team</span></h3>
+          <p>
+            Weather UI for daily/weekly forecasts + moon phases with °F/°C toggle and location input.
+          </p>
+          <p class="meta">HTML/CSS/JS</p>
+        </article>
+
+        <article class="card">
+          <h3>DTE Corrosion Dashboards</h3>
+          <p>
+            Optimized dashboards for CWOs, technician performance, and MPSC inspection progress.
+            Fixed Power BI ↔ Power Apps sync issues and added quality-of-life features (e.g., search, request forms).
+          </p>
+          <p class="meta">Power BI • Power Apps • Power Automate • Report Builder</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Power BI</span>
+        <span class="chip">Report Builder</span>
+        <span class="chip">Power Apps</span>
+        <span class="chip">Power Automate</span>
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">C++</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">HTML/CSS</span>
+        <span class="chip">Unix/Linux</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Excel</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <div class="item">
+          <h3>DTE Energy — Software Dev & Data Analyst Co-op</h3>
+          <div class="time">May 2025 – Present • Melvindale, MI</div>
+          <ul>
+            <li>Maintain & enhance Power Apps, Power BI/Report Builder, Power Automate flows for corrosion-control compliance & technician monitoring.</li>
+            <li>Built new features (e.g., search for submitted drawings; office vacation request form).</li>
+            <li>Resolved sync issues between Power BI and Power Apps; improved responsiveness and usability.</li>
+            <li>Designed dashboards tracking CWOs, technician performance, and MPSC inspection progress.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Oakland University — Technology Support Specialist</h3>
+          <div class="time">May 2024 – Apr 2025 • Rochester, MI</div>
+          <ul>
+            <li>Tier-1/2 support for hardware, software, and university systems; wrote knowledge-base docs.</li>
+            <li>Configured devices/software per standards and maintained detailed ticket records.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Meritor — Finance Intern</h3>
+          <div class="time">May 2022 – Jul 2022 • Troy, MI</div>
+          <ul>
+            <li>Audited/processed invoices in Oracle + OCR; supported month-end reconciliation and vendor issues.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="section">
+      <h2>Leadership</h2>
+      <p><strong>President (Founder)</strong> — Vietnamese Student Association (Oct 2024 – Present)</p>
+      <ul>
+        <li>Launched & led VSA; coordinated cultural events and cross-org collabs.</li>
+        <li>Managed operations, documentation (Drive/Sheets), fundraising & budgeting.</li>
+      </ul>
+    </section>
+
+    <!-- Resume image -->
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p class="muted">Click to open the full PDF. Displaying an image for quick preview.</p>
+      <a href="assets/Lisa_Nguyen_Resume.pdf" target="_blank" rel="noopener">
+        <img class="resume-img" src="assets/resume.png" alt="Resume preview (add assets/resume.png)" />
+      </a>
+      <div class="resume-actions">
+        <a class="btn" href="assets/Lisa_Nguyen_Resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="btn outline" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Best way to reach me:</p>
+      <ul class="contact">
+        <li><a href="mailto:nguyen8@oakland.edu">nguyen8@oakland.edu</a></li>
+        <li><a href="https://www.linkedin.com/in/nguyen8/" target="_blank" rel="noopener">linkedin.com/in/nguyen8</a></li>
+        <li><a href="https://github.com/LisaFloat" target="_blank" rel="noopener">github.com/LisaFloat</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="y"></span> Lisa Nguyen • Built with GitHub Pages</small>
+  </footer>
+
+  <script>
+    // small niceties
+    document.documentElement.style.scrollBehavior = "smooth";
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
